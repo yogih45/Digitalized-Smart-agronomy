@@ -1,0 +1,22 @@
+body{
+
+    background-image: url("D:\Digitalized Smart Agronomy\server\our-react\src\Components\Images\Home_Picture4.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+
+}
+
+form{
+    position:relative;
+    text-align:left;
+    justify-content: center;
+    align-items: center;
+    height:500px;
+    width:400px;
+    background: none;
+    background-color: transparent;
+    padding:100px 100px;
+    
+}
+
