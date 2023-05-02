@@ -8,6 +8,7 @@ import languages from "../Images/language_logo.png"
 import settings from "../Images/settings_logo.jpeg"
 import FAQ from "../Images/FAQ_logo.jpeg"
 import sign_in from "../Images/sign_in.jpg"
+import Website_logo from "../Images/Rent_logo-removebg-preview.png"
 
 
 function Header(){
@@ -20,6 +21,7 @@ function Header(){
 
     return(
     <header>
+      <img class="website_logo" src={Website_logo} />
         <div class="search_bar">
             <input class="search-input" type="search"  placeholder="Search for Products..."/>
             <input class="search-btn" type="button" value="Search" />
@@ -155,8 +157,12 @@ function Header(){
               </Link>
             </div>
           </div>
-  
+          <div class="logo">
+          <img class="website_logo" src={Website_logo} />
+          </div>
+
         </header>
+        
         )
 }
 export default Header;
