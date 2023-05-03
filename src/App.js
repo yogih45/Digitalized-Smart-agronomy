@@ -1,6 +1,6 @@
 import {Route,Routes } from "react-router-dom";
 import Dashboard from "./Components/dashboard/Dashboard";
-
+import Privacy_Policy from "./Components/privacy_policy";
 import Products from "./Components/products";
 import Contact from "./Components/contact"
 import Blogs from "./Components/blogs"
@@ -22,6 +22,7 @@ function App() {
           <Route path='contact' element={<Contact />}></Route>
           <Route path="about" element={<About /> } ></Route>
           <Route path="blogs" element={<Blogs /> }></Route>
+          <Route path="privacy_policy" element={<Privacy_Policy /> }></Route>
 
           
       </Routes>

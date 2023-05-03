@@ -18,7 +18,6 @@ function Dashboard() {
       <div >
           <Header />
           <Main />
-          <Footer />
       </div>
     </form>
   );

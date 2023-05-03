@@ -18,7 +18,13 @@ import linked_in from "./Images/linked-in-logo.png"
 function Contact(){
   const SentEmail=(e)=>{
       e.preventDefault();
-      emailjs.sendForm("service_xrxp39b","template_dypl2aa",e.target,"c3AKDUbdd39cDfec2").then(res=>{console.log(res)}).catch(err=>console.log(err))
+      emailjs.sendForm("service_xrxp39b","template_dypl2aa",e.target,"c3AKDUbdd39cDfec2")
+      .then(()=>{
+        alert("sent successfully");
+      }).catch(()=>{
+        alert("Something Went Wrong");
+      })
+        
   }
     useEffect(()=>{
         AOS.init({duration :2000})
@@ -48,24 +54,24 @@ function Contact(){
                 <span>Send your request</span><br></br><br></br><br></br>
                 <div  class="left-top-input">
                    <label>Name :</label><br></br>
-                   <input type="text" name="name"/><br></br>
+                   <input type="text" name="name" required/><br></br>
                 </div>
                 <div class="right-top-input">
                 <label>Phone no :</label><br></br>
                 
-                <input type="tel" name="phone_no" /><br></br>
+                <input type="tel" name="phone_no" required/><br></br>
                </div>
                <div class="left-bottom-input">
                  <label>Email :</label><br></br>
-                 <input type="email" name="user_email" /><br></br>
+                 <input type="email" name="user_email" required/><br></br>
                </div>
                 <div class="right-bottom-input">
                   <label>Subject :</label><br></br>
-                  <input type="text" name="subject"/><br></br>
+                  <input type="text" name="subject"required/><br></br>
                 </div>
                 <div class="messege">
                   <label>Message :</label><br></br>
-                  <textarea type="text" name="message" rows="6" cols="86" ></textarea><br></br>
+                  <textarea type="text" name="message" rows="6" cols="86" required></textarea><br></br>
                 </div>
                 <button>Send</button>
                 

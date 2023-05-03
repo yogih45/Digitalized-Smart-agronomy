@@ -1,17 +1,17 @@
-.footer{
-    position: absolute;
-    margin-top: 110%;
-    background-color: #545454;
-    height:280px;
-    width:100%;
 
-}
 .footer-left p{
         text-align: left;
         padding-top:90px;
         color:white;
         font-family:Arial, Helvetica, sans-serif;
         margin-left:60px;
+}
+.footer-page{
+    background-color: #545454;
+    height:280px;
+    width:100%;
+    position:absolute;
+    margin-top: 5%;
 }
 .footer-left{
     text-align:center;
@@ -61,7 +61,7 @@
     text-decoration:none;
     color:rgb(47, 255, 0);
 }
-.quick-as li a:hover{
+.quick-links li a:hover{
     color:darkgoldenrod;
 }
 .services {
@@ -74,9 +74,6 @@
     text-decoration: none;
     color:rgb(47, 255, 0);;
     margin-left:-30px;
-}
-.services a:hover{
-    color:darkgoldenrod;
 }
 
 .services h2 {

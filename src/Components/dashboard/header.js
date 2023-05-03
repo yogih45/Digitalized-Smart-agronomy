@@ -30,7 +30,7 @@ function Header(){
         <nav >
             <ul>
                  <li><Link to="/">Home</Link></li>
-                 <li><Link to="/blogs">Blogs</Link></li>
+                 
                  <li><Link to="/Marketplace">Marketplace</Link>
                  <div class="sub-nav_1">
                         <ul>

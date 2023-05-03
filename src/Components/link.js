@@ -1,4 +1,5 @@
 import  {Routes,Route,} from "react-router-dom";
+import PrivacyPolicy from "./privacy_policy";
 import About from "./about";
 import Contact from "./contact"
 import Blogs from "./blogs"
@@ -18,7 +19,7 @@ function Links(){
                  <Route path="marketplace" Component={Marketplace } />
                  <Route path='contact' Component={Contact} />
                  <Route path="about" Component={About } />
-
+                 <Route path="privacy_policy" Component={PrivacyPolicy } />
 
                </Routes>  
         </div>

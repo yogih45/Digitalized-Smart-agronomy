@@ -5,7 +5,6 @@ import Footer from "./dashboard/footer";
 import about from "./Images/about.jpeg"
 import Contact from "./Images/phone_icon.png"
 import Email from "./Images/email.webp"
-import './styles/about.css';
 import './styles/About-footer.css'
 import AOS from "aos";
 import "aos/dist/aos.css";

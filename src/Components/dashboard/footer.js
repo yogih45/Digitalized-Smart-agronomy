@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import footer_logo from "../Images/logo1.png"
 import email from "../Images/email.webp"
 import contact from "../Images/phone_icon.png"
@@ -18,7 +19,7 @@ function Footer(){
   },[])
 
     return(
-        <div class="footer"data-aos="fade-up">
+        <div class="footer-page"data-aos="fade-up">
         <div class='footer-left'>
           <img class="footer_logo" src={footer_logo} />
           <h1 class='agro'>Agro<h1 class="nomy">Nomy</h1></h1>
@@ -35,14 +36,13 @@ function Footer(){
           <div class='quick-links'>
             <h2>Quick Links</h2>
            <ul>
-               <li><a href="#" >Home</a><br></br></li>
-               <li><a href="#" >Products </a> <br></br></li>
-               <li><a href="#" >Services</a><br></br></li>
-               <li><a href="#" >MarketPlace</a><br></br></li>
-               <li><a href="#" >About us</a><br></br></li>
-               <li><a href="#" >Blogs</a><br></br></li>
-               <li><a href="#" >Reports</a><br></br></li>
-               <li><a href="#" >FAQ's</a><br></br></li>
+               <li><Link to="#" >Products </Link> <br></br></li>
+               <li><Link to="/privacy_policy" >Privacy Policy</Link><br></br></li>
+               <li><Link to="#" >Terms and Conditions</Link><br></br></li>
+               <li><Link to="#" >MarketPlace</Link><br></br></li>
+               <li><Link to="/about" >About us</Link><br></br></li>
+               <li><Link to="#" >Reports</Link><br></br></li>
+               <li><Link to="#" >FAQ's</Link><br></br></li>
             </ul>
           </div>
 
@@ -61,10 +61,10 @@ function Footer(){
           </div>
           <div class='contact-us'>
             <h2>Contact Us</h2>
-            <a><img src={location}/><span>www.digitalizedSmartAgronomy.com</span></a><br></br>
-            <a><img src={email}/><span>rental@agriindia.org</span></a><br></br>
-            <a><img src={contact}/><span>+919380019642<br></br>
-            +917019014365</span></a>
+            <Link to="/contact" ><img src={location}/><span>www.digitalizedSmartAgronomy.com</span></Link><br></br>
+            <Link to="/contact" ><img src={email}/><span>rental@agriindia.org</span></Link><br></br>
+            <Link to="/contact" a><img src={contact}/><span>+919380019642<br></br>
+            +917019014365</span></Link>
           </div>
         </div>
         
