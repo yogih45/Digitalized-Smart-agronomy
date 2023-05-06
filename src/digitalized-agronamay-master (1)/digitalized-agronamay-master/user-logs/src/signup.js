@@ -5,9 +5,6 @@ import { Link } from 'react-router-dom';
 function Signup() {
   const [form, setForm] = useState({});
   const [users, setUsers] = useState([]);
-
-
-
   const handleForm = (e)=>{
     setForm({
       ...form,

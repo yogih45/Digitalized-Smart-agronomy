@@ -1,6 +1,6 @@
 import Header from "./dashboard/header";
 import emailjs from "emailjs-com"
-import Footer from "./dashboard/footer";
+import Contact_footer from "./contact-footer";
 import phone_icon from "./Images/phone_icon.png"
 import Email from "./Images/email.webp"
 import Location from "./Images/loca.png"
@@ -108,7 +108,7 @@ function Contact(){
               <img src={youtube} />
               <img src={linked_in} />
              </div>
-         <Footer />
+         <Contact_footer />
      </div>
 
     )

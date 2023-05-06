@@ -6,12 +6,12 @@
         font-family:Arial, Helvetica, sans-serif;
         margin-left:60px;
 }
-.footer-page{
+.about-footer-page{
     background-color: #545454;
     height:280px;
     width:100%;
     position:absolute;
-    margin-top: 5%;
+    margin-top: 110%;
 }
 .footer-left{
     text-align:center;

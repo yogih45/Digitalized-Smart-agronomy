@@ -2,7 +2,7 @@
 
 .body{
     background-image:url("D:\Digitalized Smart Agronomy\server\our-react\src\Components\Images\about_img.jpg");
-    background-size:100% 100%;
+    background-size:100% 70%;
     background-repeat:no-repeat;
     background-position: center;
     box-sizing: border-box;
@@ -117,7 +117,7 @@ nav ul li a:hover::after{
     left:5px;
 }
 nav ul li a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 247, 255);
     transform:scale();
     box-shadow: 0px 0px 0px 0px;
     
@@ -194,7 +194,11 @@ background-color:rgba(31, 186, 31, 0.74);
     color:rgba(246, 246, 246, 0.74);
     border-bottom-left-radius: 0px;
     border-top-left-radius: 0px;
+    cursor:pointer;
 
+}
+.search_bar .search-btn:hover{
+    background-color: rgb(0, 0, 0) ;
 }
 .menu-bar-wrap{
     position:absolute;
@@ -574,12 +578,9 @@ nav ul li:hover .sub-nav_1{
 .center{
     background-color:white;
 }
-
-
-
 .container .slide-button{
     position: absolute;
-    margin-top:-6%;
+    margin-top:-18%;
     margin-left:0px;
     width:100%;
     display: flex;
@@ -679,7 +680,7 @@ height:30vh;
     font-size:15px;
 }
 .products{
-    margin-top:200px;
+    margin-top:500px;
     margin-left:-90px;
 }
 .item1:hover{
@@ -716,12 +717,13 @@ height:30vh;
     cursor:pointer;
 }
 .main{
-    margin-left:-700px;
+    position: absolute;
+    margin-left:100px;
     text-align:center;
-    margin-top:200px;
+    margin-top:-400px;
 }
 .main h5{
-    -webkit-text-fill-color:white;
+    -webkit-text-fill-color:darkturquoise;
     font-size:40px;
     font-family:sans-serif;
     letter-spacing: 0px;
@@ -729,7 +731,6 @@ height:30vh;
 
 }
 .main h5:hover{
-    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: blwhiteue;
 }
 .main p{
@@ -737,7 +738,7 @@ height:30vh;
     margin-top:-60px;
 }
 .main span{
-    color:white;
+    color:rgb(255, 255, 255);
     font-weight: 600;
 }
 .main button{
@@ -753,14 +754,14 @@ height:30vh;
     font-weight: 600;
 
 }
-.main button:hover{
+.main button:is(:hover, :focus){
     color:yellow;
     background-color:green;
     border: 1px solid yellow;
 }
 .heading{
     color:rgb(0, 0, 0);
-    margin-top:250px;
+    margin-top:30px;
     position: absolute;
     text-align: center;
     margin-left: 44%;
@@ -772,7 +773,7 @@ hr{
     width:100px;
     background-color:green;
     border: none;
-    margin-top: 300px;
+    margin-top: 80px;
     margin-left: 44%;
 }
 .more-products{
@@ -804,6 +805,7 @@ hr{
     height:350px;
     width:500px;
     box-shadow:0 0 3px 3px rgb(212, 211, 211);
+    border-radius:10px;
    
 }
 .importance-para{
@@ -821,11 +823,12 @@ hr{
     margin-left: 70px;
 }
 .market .agri-market-img{
-    display:absolute;
+    display:relative;
     margin-top:50px;
-    height:400px;
+    height:300px;
     width:50%;
     margin-left:20%;
+    border-radius:10px;
 }
 .market .agri-market-img:hover{
     transform: scale(1.1);
